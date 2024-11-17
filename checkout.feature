@@ -7,8 +7,13 @@ e escolher a quantidade
 Para depois inserir no carrinho 
 
 
-Cenário:1 configurar produto
+Cenário:1 configurar produto com sucesso 
 Dado que eu acesse a EBAC-shop
-Quando colocar protudo  com tamanho, cor e quantidade desejadas 
+Quando colocar protudo  com <tamanho>, <cor> e <quantidade desejadas> 
 E colocar no carrinho com no maximo 10 produtos
-Então caso queira clicar no botão "limpar" deve limpar todo o carrinho.
+Então finalisar protudo com sucesso 
+
+Cenário: 2 limpar carrinho 
+Dado que eu acesse o <carrinho> do EBAC-shop 
+Quando clicar no botão <limpar>
+Então deve lipar todo o <carrinho> escolhido 
