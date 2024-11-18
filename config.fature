@@ -1,19 +1,23 @@
-#lenguage: pt
+# language: pt
 
-Funcionalidade: config fature 
-Como cliente da EBAC-SHOP 
-Quero configurar meu produto de acordo com meu tamanho e gosto 
-e escolher a quantidade 
-Para depois inserir no carrinho 
+Funcionalidade: Configuração de produto na EBAC-SHOP
+  Como cliente da EBAC-SHOP
+  Quero configurar meu produto de acordo com meu tamanho e gosto 
+  E escolher a quantidade 
+  Para depois inserir no carrinho
 
+  Esquema do Cenário: Configurar produto com sucesso
+    Dado que eu acesse a EBAC-shop
+    Quando eu configurar o produto com <tamanho>, <cor> e <quantidade> desejados 
+    E adicionar o produto ao carrinho com no máximo 10 produtos
+    Então devo visualizar a <mensagem> de confirmação
 
-Cenário:1 configurar produto com sucesso 
-Dado que eu acesse a EBAC-shop
-Quando colocar protudo  com tamanho,cor e quantidade desejadas 
-E colocar no carrinho com no maximo 10 produtos
-Então finalisar protudo com sucesso 
+    Exemplos:
+      | tamanho  | cor       | quantidade | mensagem                          |
+      | P        | Vermelho  | 7          | "Produto adicionado com sucesso!" |
+      | G        | Azul      | 1          | "Produto adicionado com sucesso!" |
 
-Cenário: 2 limpar carrinho 
-Dado que eu acesse o carrinho do EBAC-shop 
-Quando clicar no botão limpar
-Então deve lipar todo o carrinho escolhido 
+  Cenário: Limpar carrinho 
+    Dado que eu acesse o carrinho da EBAC-SHOP 
+    Quando eu clicar no botão limpar
+    Então todo o carrinho deve ser limpo com sucesso
