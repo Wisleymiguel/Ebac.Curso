@@ -4,6 +4,6 @@ Funcionalidade:login feature
 
 
 Dado que eu acesse EBAC-shop
-Quando      eu digitar o "usuario"
-E a senha no logim 
-Então deve exiber a tela de checkout 
+Quando eu digitar o "usuario"
+E a senha no login 
+Então deve exibir a tela de checkout 
