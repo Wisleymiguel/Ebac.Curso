@@ -9,7 +9,7 @@ Funcionalidade: Configuração de produto na EBAC-SHOP
   Esquema do Cenário: Configurar produto com sucesso
     Dado que eu acesse a EBAC-shop
     Quando eu configurar o produto com <tamanho>, <cor> e <quantidade> desejados 
-    E adicionar o produto ao carrinho com no máximo 10 produtos
+    E adicionar a < Quantidade >correta  ao carrinho com no máximo 10 produtos
     Então devo visualizar a <mensagem> de confirmação
 
     Exemplos:
